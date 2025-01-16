@@ -1,3 +1,15 @@
+:root {
+	--black: #111;
+	--orange: #fd9222;
+	--violet: #1e1823;
+	--beige: #fcf1e0;
+	--light: #fafafa;
+	--gray: #4c4c4c;
+	--white: #fff;
+	--marker-body: #4c4c4c;
+	--marker-border: #eceded;
+}
+
 body {
   font-family: "Montserrat", serif;
   background-color: #fafafa;
@@ -40,6 +52,10 @@ ol {
 
 button {
   cursor: pointer;
+}
+
+.text-orange {
+  color: var(--orange);
 }
 
 /* #region Header */
@@ -160,4 +176,71 @@ gap: 14px;
 }
 
 .scroll {
+}
+
+
+/**
+  |============================
+  | INGRIDIENTS
+  |============================
+*/
+
+.ingridients-section {
+  padding-top: 120px;
+  padding-bottom: 60px;
+}
+.container {
+}
+.ingridient-title {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 412px;
+  font-weight: 600;
+font-size: 24px;
+line-height: 1.17;
+letter-spacing: -0.03em;
+text-transform: uppercase;
+text-align: center;
+color: var(--black);
+margin-bottom: 50px;
+}
+.ingridient-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+.ingridient-items {
+  width: calc((100% - (32px * 3)) / 4);
+  padding: 28px 23px;
+border-radius: 15px;
+border: 1px solid transparent;
+background-color: #fff;
+}
+
+.ingridient-items:nth-child(4n + 1) {
+  background-color: var(--orange);
+  color: var(--white);
+}
+.ingridient-items:nth-child(even) {
+  border-color: var(--orange);
+  color: var(--black);
+  background-color: #fff;
+}
+
+.ingridient-items:nth-child(4n + 3) {
+background-color: var(--black);
+color: var(--white);
+}
+
+.ingridient-image {
+margin-bottom: 36px;  
+}
+.ingridient-subtitle {
+  font-weight: 600;
+font-size: 14px;
+
+/* line-height: 18px; */ 
+line-height: 1.28;
+letter-spacing: -0.02em;
+text-transform: uppercase;
 }
