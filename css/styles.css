@@ -144,6 +144,13 @@ button {
   padding-bottom: 40px;
   border-radius: 30px;
   background-color: rgba(17, 17, 17, 0.4);
+  background-image: linear-gradient(
+      rgba(17, 17, 17, 0.4),
+      rgba(17, 17, 17, 0.4)
+    ),
+    url(../images/hero/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .hero-title {
   font-weight: 500;
