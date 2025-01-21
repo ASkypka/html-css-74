@@ -88,7 +88,7 @@
 
             <a class="hero-link-scroll" href="#ingridients-section">scroll down
               <span>
-                <svg width="38" heigth="38">
+                <svg width="38" height="38">
                   <use href="./images/sprite.svg#icon-arrow-down"></use>
                 </svg>
               </span>
@@ -145,7 +145,7 @@
                   alt=""
                   class="ingridient-image"
                   width="214"
-                  height=""
+                  height="160"
                 />
                 <p class="ingridient-description">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
@@ -165,7 +165,7 @@
                 alt=""
                 class="ingridient-image"
                 width="214"
-                height=""
+                height="160"
               />
               <h3 class="ingridient-subtitle">MILK</h3>
             </li>
@@ -175,7 +175,7 @@
                 alt=""
                 class="ingridient-image"
                 width="214"
-                height=""
+                height="160"
               />
               <h3 class="ingridient-subtitle">NUTS</h3>
             </li>
@@ -185,7 +185,7 @@
                 alt=""
                 class="ingridient-image"
                 width="214"
-                height=""
+                height="160"
               />
               <h3 class="ingridient-subtitle">SEMI - SWEET CHOCOLATE</h3>
             </li>
@@ -195,7 +195,7 @@
                 alt=""
                 class="ingridient-image"
                 width="214"
-                height=""
+                height="160"
               />
               <h3 class="ingridient-subtitle">CACAO</h3>
             </li>
@@ -205,7 +205,7 @@
                 alt=""
                 class="ingridient-image"
                 width="214"
-                height=""
+                height="160"
               />
               <h3 class="ingridient-subtitle">RASPBERRY</h3>
             </li>
@@ -215,7 +215,7 @@
                 alt=""
                 class="ingridient-image"
                 width="214"
-                height=""
+                height="160"
               />
               <h3 class="ingridient-subtitle">COCONUT OIL</h3>
             </li>
@@ -223,5 +223,46 @@
         </div>
       </section>
     </main>
+    <!-- modal -->
+<div class="backdrop">
+  <div class="modal">
+    <h2 class="modal-title">LEAVE A REVIEW ABOUT OUR CHOCOLATE</h2>
+    <button class="btn-close-modal" type="button">X</button>
+
+    <form class="form-chocolate" autocomplete="off" >
+<div class="modal-wrapper">
+  <label class="modal-label" for="user-name">Name</label>
+  <div class="modal-field">
+    <input class="modal-field-input" type="text" name="user-name" id="user-name">
+  </div>
+
+  <label class="modal-label" for="user-email">Email</label>
+  <div class="modal-field">
+    <input class="modal-field-input" type="email" name="user-email" id="user-email">
+  </div>
+
+  <label class="modal-label" for="user-phone">Phone number</label>
+  <div class="modal-field">
+    <input class="modal-field-input" type="tel" name="user-phone" id="user-phone">
+  </div>
+
+<div class="modal-textarea-wrapper">
+  <label class="modal-label" for="comment-user">Comment</label>
+  <textarea class="modal-textarea" name="comment-user" id="comment-user">
+
+  </textarea>
+</div>
+
+<div class="modal-wrapper-checkbox">
+  <input class="checkbox" type="checkbox" name="checkbox-user" id="checkbox-user">
+<label class="modal-checkbox-user" for="checkbox-user">I accept the terms and conditions of the <a class="checkbox-policy-link" href="#">Privacy Policy</a></label>
+</div>
+
+<button class="modal-form-btn" type="submit">Send</button>
+
+</div>
+    </form>
+  </div>
+</div>
   </body>
 </html>
