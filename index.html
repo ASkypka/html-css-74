@@ -20,6 +20,7 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
+
   <body>
     <header class="header">
       <div class="container">
@@ -29,15 +30,14 @@
             <span class="logo-icon">
               <svg width="24" height="24">
                 <use href="./images/sprite.svg#icon-chocolate-logo"></use>
-              </svg>
-            </span></a
-          >
+              </svg> </span
+          ></a>
           <ul class="header-nav-list">
             <li class="nav-list">
               <a class="nav-list-link current" href="./index.html">Home</a>
             </li>
             <li class="nav-list">
-              <a class="nav-list-link " href="#">How it's made?</a>
+              <a class="nav-list-link" href="#">How it's made?</a>
             </li>
             <li class="nav-list">
               <a class="nav-list-link" href="#">Chocolate is loved</a>
@@ -47,27 +47,24 @@
 
         <ul class="header-social-list">
           <li class="header-social-item">
-            <a class="social-link" href="#"
-              >
-              <svg  class="social-icon" width="40" height="40">
+            <a class="social-link" href="#">
+              <svg class="social-icon" width="40" height="40">
                 <use href="./images/sprite.svg#icon-facebook"></use>
               </svg>
             </a>
           </li>
           <li class="header-social-item">
-            <a class="social-link" href="#"
-              >
+            <a class="social-link" href="#">
               <svg class="social-icon" width="40" height="40">
-              <use href="./images/sprite.svg#icon-instagram"></use>
-            </svg>
+                <use href="./images/sprite.svg#icon-instagram"></use>
+              </svg>
             </a>
           </li>
           <li class="header-social-item">
-            <a class="social-link" href="#"
-              >
+            <a class="social-link" href="#">
               <svg class="social-icon" width="40" height="40">
-              <use href="./images/sprite.svg#icon-twitter"></use>
-            </svg>
+                <use href="./images/sprite.svg#icon-twitter"></use>
+              </svg>
             </a>
           </li>
         </ul>
@@ -86,7 +83,8 @@
               <a class="hero-link" href="#">How it's made</a>
             </div>
 
-            <a class="hero-link-scroll" href="#ingridients-section">scroll down
+            <a class="hero-link-scroll" href="#ingridients-section"
+              >scroll down
               <span>
                 <svg width="38" height="38">
                   <use href="./images/sprite.svg#icon-arrow-down"></use>
@@ -224,45 +222,123 @@
       </section>
     </main>
     <!-- modal -->
-<div class="backdrop is-open">
-  <div class="modal">
-    <h2 class="modal-title">LEAVE A REVIEW ABOUT <span class="accent-color">OUR CHOCOLATE</span> </h2>
-    <button class="btn-close-modal" type="button">X</button>
+    <div class="backdrop is-open">
+      <div class="modal">
+        <h2 class="modal-title">
+          LEAVE A REVIEW ABOUT <span class="accent-color">OUR CHOCOLATE</span>
+        </h2>
+        <button class="btn-close-modal" type="button">
+          <svg class="modal-close-icon" width="28" height="28">
+            <use href="./images/sprite.svg#icon-x-close"></use>
+          </svg>
+        </button>
 
-    <form class="form-chocolate" autocomplete="off" >
-<div class="modal-wrapper">
-  <label class="modal-label" for="user-name">Name</label>
-  <div class="modal-field">
-    <input class="modal-field-input" type="text" name="user-name" id="user-name">
-  </div>
+        <form class="form-chocolate" autocomplete="off">
+          <div class="modal-wrapper">
+            <label class="modal-label" for="user-name">Name</label>
+            <div class="modal-field">
+              <input
+                class="modal-field-input"
+                type="text"
+                name="user-name"
+                id="user-name"
+                placeholder=""
+                required
+                maxlength="20"
+                pattern="[A-Za-z0-9]{6,}"
+              />
+              <svg class="modal-field-icon" width="24" height="24">
+                <use href="./images/sprite.svg#icon-user"></use>
+              </svg>
+              <svg class="modal-icon-valid" width="24" height="24">
+                <use
+                  class="success"
+                  href="./images/sprite.svg#icon-success"
+                ></use>
+                <use class="error" href="./images/sprite.svg#icon-vector"></use>
+              </svg>
+            </div>
 
-  <label class="modal-label" for="user-email">Email</label>
-  <div class="modal-field">
-    <input class="modal-field-input" type="email" name="user-email" id="user-email">
-  </div>
+            <label class="modal-label" for="user-email">Email</label>
+            <div class="modal-field">
+              <input
+                class="modal-field-input"
+                type="email"
+                name="user-email"
+                id="user-email"
+                required
+                placeholder=""
+                pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+              />
+              <svg class="modal-field-icon" width="24" height="24">
+                <use href="./images/sprite.svg#icon-mail"></use>
+              </svg>
+              <svg class="modal-icon-valid" width="24" height="24">
+                <use
+                  class="success"
+                  href="./images/sprite.svg#icon-success"
+                ></use>
+                <use class="error" href="./images/sprite.svg#icon-vector"></use>
+              </svg>
+            </div>
 
-  <label class="modal-label" for="user-phone">Phone number</label>
-  <div class="modal-field">
-    <input class="modal-field-input" type="tel" name="user-phone" id="user-phone">
-  </div>
+            <label class="modal-label" for="user-phone">Phone number</label>
+            <div class="modal-field">
+              <input
+                class="modal-field-input"
+                type="tel"
+                name="user-phone"
+                id="user-phone"
+                required
+                placeholder=""
+              />
+              <svg class="modal-field-icon" width="24" height="24">
+                <use href="./images/sprite.svg#icon-phone"></use>
+              </svg>
+              <svg class="modal-icon-valid" width="24" height="24">
+                <use
+                  class="success"
+                  href="./images/sprite.svg#icon-success"
+                ></use>
+                <use class="error" href="./images/sprite.svg#icon-vector"></use>
+              </svg>
+            </div>
 
-<div class="modal-textarea-wrapper">
-  <label class="modal-label" for="comment-user">Comment</label>
-  <textarea class="modal-textarea" name="comment-user" id="comment-user">
+            <div class="modal-textarea-wrapper">
+              <label class="modal-label" for="comment-user">Comment</label>
+              <textarea
+                class="modal-textarea"
+                name="comment-user"
+                id="comment-user"
+                maxlength="700"
+              >
+              </textarea>
+            </div>
 
-  </textarea>
-</div>
+            <div class="modal-wrapper-checkbox">
+              <input
+                class="checkbox visually-hidden"
+                type="checkbox"
+                name="checkbox-user"
+                id="checkbox-user"
+              />
 
-<div class="modal-wrapper-checkbox">
-  <input class="checkbox" type="checkbox" name="checkbox-user" id="checkbox-user">
-<label class="modal-checkbox-user" for="checkbox-user">I accept the terms and conditions of the <a class="checkbox-policy-link" href="#">Privacy Policy</a></label>
-</div>
+              <label class="modal-checkbox-user" for="checkbox-user">
+                <span class="checkbox-user-span"
+                  ><svg width="10" height="10">
+                    <use href="./images/sprite.svg#icon-accept"></use></svg
+                ></span>
+                I accept the terms and conditions of the
+                <a class="checkbox-policy-link" href="#"
+                  >Privacy Policy</a
+                ></label
+              >
+            </div>
 
-<button class="modal-form-btn" type="submit">Send</button>
-
-</div>
-    </form>
-  </div>
-</div>
+            <button class="modal-form-btn" type="submit">Send</button>
+          </div>
+        </form>
+      </div>
+    </div>
   </body>
 </html>

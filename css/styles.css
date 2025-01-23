@@ -408,8 +408,13 @@ button {
   border: none;
   background-color: transparent;
 }
-
-.form-chocolate {
+.modal-close-icon {
+  stroke: #111;
+  fill: none;
+}
+.btn-close-modal:hover .modal-close-icon,
+.btn-close-modal:focus .modal-close-icon {
+  stroke: #fd9222;
 }
 
 .modal-label {
@@ -430,10 +435,26 @@ button {
   height: 68px;
   border: 1.5px solid rgba(17, 17, 17, 0.05);
   border-radius: 13px;
-  padding: 22px 24px;
+  padding: 22px 24px 22px 62px;
   background-color: transparent;
+  outline: none;
+  transition: border-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.modal-field-input:focus,
+.modal-textarea:focus {
+  border-color: #fd9222;
+}
+.modal-field-input:focus + .modal-field-icon {
+  stroke: #fd9222;
+}
+.modal-field-icon {
+  position: absolute;
+  top: 50%;
+  left: 24px;
+  transform: translateY(-50%);
+  stroke: #111;
+  fill: none;
+}
 .modal-textarea-wrapper {
   margin-bottom: 18px;
 }
@@ -445,6 +466,9 @@ button {
   /* padding: 22px 24px 93px 24px; */
   height: 137px;
   resize: none;
+  outline: none;
+  transition: border-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 22px 24px;
 }
 
 .modal-wrapper-checkbox {
@@ -478,4 +502,79 @@ button {
   font-size: 14px;
   color: #ffffff;
   border: none;
+}
+
+
+.modal-icon-valid {
+  position: absolute;
+  top: 50%;
+  right: 24px;
+  transform: translateY(-50%);
+}
+
+.error,
+.success {
+  opacity: 0;
+  transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* .modal-field-input::placeholder {
+  color: red;
+} */
+
+/* valid */
+.modal-field-input:not(:placeholder-shown):required:valid {
+  border-color: rgb(12, 234, 12);
+}
+
+.modal-field-input:not(:placeholder-shown):required:valid ~ .modal-icon-valid > .success{
+  opacity: 1;
+}
+
+.modal-field-input:not(:placeholder-shown):required:valid + .modal-icon-valid {
+  stroke: rgb(12, 234, 12);
+}
+
+.modal-field-input:not(:placeholder-shown):required:valid {
+  border-color: rgb(12, 234, 12);
+}
+
+/* invalid */
+
+.modal-field-input:not(:placeholder-shown):required:invalid {
+  border-color: rgb(255, 0, 0);
+}
+
+.modal-field-input:not(:placeholder-shown):required:invalid ~ .modal-icon-valid > .error {
+  opacity: 1;
+}
+
+.modal-field-input:not(:placeholder-shown):required:invalid + .modal-icon-valid {
+  stroke: rgb(255, 0, 0);
+}
+
+.modal-field-input:not(:placeholder-shown):required:invalid {
+  border-color: rgb(255, 0, 0);
+}
+
+/* checkbox */
+
+.checkbox-user-span {
+  
+  border-radius: 6px;
+  border: 1px solid rgba(17, 17, 17, 0.14);
+  height: 20px;
+  width: 20px;
+  display: inline-flex;
+  align-items: center;
+  color: transparent;
+  margin-right: 12px;
+  justify-content: center;
+}
+
+.checkbox:checked + .modal-checkbox-user > .checkbox-user-span {
+  background-color: #fd9222;
+  border: transparent;
+  color: #fafafa;
+
 }
