@@ -50,10 +50,11 @@ img {
   overflow: hidden;
 }
 .container {
-  width: 1168px;
-  padding-right: 16px;
-  padding-left: 16px;
+  padding-right: 20px;
+  padding-left: 20px;
   margin: 0 auto;
+  min-width: 320px;
+  max-width: 375px;
 }
 
 a {
@@ -161,21 +162,27 @@ button {
 .hero {
 }
 .hero .container {
-  width: 1136px;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 381px;
-  padding-bottom: 40px;
+padding: 20px;
+  padding-top: 395px;
+
   border-radius: 30px;
   background-color: rgba(17, 17, 17, 0.4);
-  background-image: linear-gradient(
-      rgba(17, 17, 17, 0.4),
-      rgba(17, 17, 17, 0.4)
-    ),
-    url(../images/hero/hero-bg.jpg);
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
+  background-image: linear-gradient(rgba(17, 17, 17, 0.4),
+      rgba(17, 17, 17, 0.4)),
+    url('../images/hero/hero-bg_mob@1x.jpg');
+ 
 }
+@media (min-resolution: 192dpi) {
+  .hero .container {
+    background-image: linear-gradient(rgba(17, 17, 17, 0.4),
+        rgba(17, 17, 17, 0.4)),
+      url('../images/hero/hero-bg_mob@2x.jpg');
+  }
+}
+
 .hero-title {
   font-weight: 500;
   font-size: 28px;
