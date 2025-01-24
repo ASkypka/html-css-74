@@ -22,74 +22,104 @@
   </head>
 
   <body>
-    <!-- <header class="header">
+    <header class="header" id="home">
       <div class="container">
         <nav class="header-nav">
-          <a class="logo" href="./index.html"
-            ><span class="logo-style">SIMPLY</span>CHOCOLATE
-            <span class="logo-icon">
-              <svg width="24" height="24">
-                <use href="./images/sprite.svg#icon-chocolate-logo"></use>
-              </svg> </span
-          ></a>
+          <a class="logo header-logo" href="./index.html">
+            <span class="logo-accent">SIMPLY</span>&nbsp;CHOCOLATE
+            <svg class="logo-img" width="24" height="24">
+              <use href="./images/icons.svg#logo"></use>
+            </svg>
+          </a>
+          <button
+            class="menu-btn js-menu-btn"
+            type="button"
+            aria-label="Open menu button"
+          >
+            <svg class="menu-btn-icon" width="28" height="28">
+              <use href="./images/icons.svg#burger-icon"></use>
+            </svg>
+          </button>
+
           <ul class="header-nav-list">
-            <li class="nav-list">
-              <a class="nav-list-link current" href="./index.html">Home</a>
+            <li class="header-nav-item">
+              <a class="header-nav-link active" href="#home">Home</a>
             </li>
-            <li class="nav-list">
-              <a class="nav-list-link" href="#">How it's made?</a>
+            <li class="header-nav-item">
+              <a class="header-nav-link" href="#made">How it’s made?</a>
             </li>
-            <li class="nav-list">
-              <a class="nav-list-link" href="#">Chocolate is loved</a>
+            <li class="header-nav-item">
+              <a class="header-nav-link" href="#reviews">Chocolate is loved</a>
             </li>
           </ul>
         </nav>
-
-        <ul class="header-social-list">
-          <li class="header-social-item">
-            <a class="social-link" href="#">
-              <svg class="social-icon" width="40" height="40">
-                <use href="./images/sprite.svg#icon-facebook"></use>
+        <ul class="socials header-socials">
+          <li class="socials-item">
+            <a
+              class="socials-link"
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook link"
+            >
+              <svg class="socials-icon" width="24" height="24">
+                <use href="./images/icons.svg#facebook"></use>
               </svg>
             </a>
           </li>
-          <li class="header-social-item">
-            <a class="social-link" href="#">
-              <svg class="social-icon" width="40" height="40">
-                <use href="./images/sprite.svg#icon-instagram"></use>
+          <li class="socials-item">
+            <a
+              class="socials-link"
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram link"
+            >
+              <svg class="socials-icon" width="24" height="24">
+                <use href="./images/icons.svg#instagram"></use>
               </svg>
             </a>
           </li>
-          <li class="header-social-item">
-            <a class="social-link" href="#">
-              <svg class="social-icon" width="40" height="40">
-                <use href="./images/sprite.svg#icon-twitter"></use>
+          <li class="socials-item">
+            <a
+              class="socials-link"
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Twitter link"
+            >
+              <svg class="socials-icon" width="24" height="24">
+                <use href="./images/icons.svg#twitter"></use>
               </svg>
             </a>
           </li>
         </ul>
       </div>
-    </header> -->
-    <main>
-      <section class="hero" id="made">
-        <div class="container">
-          <h1 class="hero-title" title="click_me">
-            Treat yourself or a loved one to our finest ingredients for a moment
-            of pure delight!
-          </h1>
-          <div class="hero-cont-btn">
-            <div>
-              <button class="hero-btn" type="button">Buy now</button>
-              <a class="hero-link" href="#">How it's made</a>
-            </div>
+    </header>
 
-            <a class="hero-link-scroll" href="#ingridients-section"
-              >scroll down
-              <span>
-                <svg width="38" height="38">
-                  <use href="./images/sprite.svg#icon-arrow-down"></use>
-                </svg>
-              </span>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero-title">
+            Treat yourself or a loved one to our&nbsp;finest ingridients for a
+            moment of pure delight!
+          </h1>
+          <div class="hero-wrapper">
+            <ul class="hero-controls">
+              <li class="hero-item">
+                <button class="btn btn-accent" type="button">Buy now</button>
+              </li>
+              <li class="hero-item">
+                <button class="btn btn-light" type="button">
+                  How it’s made
+                </button>
+              </li>
+            </ul>
+            <a class="hero-link" href="">
+              scroll down
+              <svg class="hero-link-icon" width="22" height="22">
+                <use href="./images/icons.svg#arrow-down"></use>
+              </svg>
             </a>
           </div>
         </div>
@@ -138,7 +168,7 @@
           <ul class="ingridient-list">
             <li class="ingridient-items">
               <div class="div-overlay">
-                <picture>
+                <!-- <picture>
                   <source
                     media="(min-width: 1280px)"
                     type="image/webp"
@@ -164,9 +194,9 @@
                     alt=""
                     loading="lazy"
                   />
-                </picture>
+                </picture> -->
                 <img
-                  src="./images/img-ingr/img-1@2x.png"
+                  src="./images/ingridients/img-1@2x.png"
                   alt=""
                   class="ingridient-image"
                   width="214"
@@ -186,7 +216,7 @@
             </li>
             <li class="ingridient-items">
               <img
-                src="./images/img-ingr/img-2@2x.png"
+                src="./images/ingridients/img-2@2x.png"
                 alt=""
                 class="ingridient-image"
                 width="214"
@@ -196,7 +226,7 @@
             </li>
             <li class="ingridient-items">
               <img
-                src="./images/img-ingr/img-3@2x.png"
+                src="./images/ingridients/img-3@2x.png"
                 alt=""
                 class="ingridient-image"
                 width="214"
@@ -206,7 +236,7 @@
             </li>
             <li class="ingridient-items">
               <img
-                src="./images/img-ingr/img-4@2x.png"
+                src="./images/ingridients/img-4@2x.png"
                 alt=""
                 class="ingridient-image"
                 width="214"
@@ -216,7 +246,7 @@
             </li>
             <li class="ingridient-items">
               <img
-                src="./images/img-ingr/img-5@2x.png"
+                src="./images/ingridients/img-5@2x.png"
                 alt=""
                 class="ingridient-image"
                 width="214"
@@ -226,7 +256,7 @@
             </li>
             <li class="ingridient-items">
               <img
-                src="./images/img-ingr/img-6@2x.png"
+                src="./images/ingridients/img-6@2x.png"
                 alt=""
                 class="ingridient-image"
                 width="214"
@@ -236,7 +266,7 @@
             </li>
             <li class="ingridient-items">
               <img
-                src="./images/img-ingr/img-7@2x.png"
+                src="./images/ingridients/img-7@2x.png"
                 alt=""
                 class="ingridient-image"
                 width="214"
@@ -353,8 +383,8 @@
               <label class="modal-checkbox-user" for="checkbox-user">
                 <span class="checkbox-user-span"
                   ><svg width="10" height="10">
-                    <use href="./images/sprite.svg#icon-accept"></use></svg
-                ></span>
+                    <use href="./images/sprite.svg#icon-accept"></use></svg>
+                </span>
                 I accept the terms and conditions of the
                 <a class="checkbox-policy-link" href="#"
                   >Privacy Policy</a
@@ -367,5 +397,25 @@
         </form>
       </div>
     </div>
+    <!-- menu button -->
+    <div class="menu-container">
+      <button class="close-button-menu js-menu-btn" aria-label="close-menu-button">
+        <svg class="close-button-menu-icon " width="28" height="28">
+          <use href="./images/icons.svg#x-close"></use>
+        </svg>
+      </button>
+      <ul class="menu-list">
+          <li class="menu-list-item">
+            <a class="menu-list-link active" href="#home">Home</a>
+          </li>
+          <li class="menu-list-item">
+            <a class="menu-list-link" href="#made">How it’s made?</a>
+          </li>
+          <li class="menu-list-item">
+            <a class="menu-list-link" href="#reviews">Chocolate is loved</a>
+          </li>
+        </ul>
+    </div>
+    <script type="module" src="./js/menu.js"></script>
   </body>
 </html>
